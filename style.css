@@ -211,7 +211,7 @@ body{
 }
 
 .tile-128,.tile-256,.tile-512,.tile-1024 {
-    font-family: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .tile-1024,.tile-2048{
