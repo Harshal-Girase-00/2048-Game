@@ -213,6 +213,7 @@ body{
 .tile-128,.tile-256,.tile-512,.tile-1024 {
     font-family: 0.5rem;
 }
+}
 
 @media screen and (max-width: 760px) and (orientation: landscape) {
 .container{
