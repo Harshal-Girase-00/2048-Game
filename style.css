@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FAFFCA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+#score{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:2rem;
+    color: green;
+}
+
+.container{
+    padding: 3rem;
+    height: 80vh;
+}
+
+#game{
+    height: 22rem;
+    width: 22rem;
+    background-color: #5A827E;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 0.3rem;
+    border-radius: 0.4rem;
+    padding: 7px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tile{
+    background-color: #B9D4AA;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#reset-btn{
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+   
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.game-over{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+#restart-btn{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem ;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.tile-2{
+    background-color: #EEE4DA;
+    color: #776E65;
+}
+
+.tile-4 {
+    background-color: #EDE0C8;
+    color: #776E65;
+}
+
+.tile-8 {
+    background-color: #F2B179;
+    color: #F9F6F2;
+}
+
+.tile-16 {
+    background-color: #F59563;
+    color: #F9F6F2;
+}
+
+.tile-32 {
+    background-color: #F67C5F;
+    color: #F9F6F2;
+}
+
+.tile-64 {
+    background-color: #F65E3B;
+    color: #F9F6F2;
+}
+
+.tile-128 {
+    background-color: #EDCF72;
+    color: #F9F6F2;
+    font-size: 2.6rem;
+}
+
+.tile-256 {
+    background-color: #EDCC61;
+    color: #F9F6F2;
+    font-size: 2.4rem;
+}
+
+.tile-512 {
+    background-color: #EDC850;
+    color: #F9F6F2;
+    font-size: 2.2rem;
+}
+
+.tile-1024 {
+    background-color: #EDC53F;
+    color: #F9F6F2;
+    font-size: 2rem;
+}
+
+.tile-2048 {
+    background-color: #EDC22E;
+    color: #F9F6F2;
+    font-size: 1.8rem;
+}
+
+.tile.selected{
+    border: 2px solid red ;
+}
+
+
+
+@media (max-width:500px) {
+#game{
+    height: 16rem;
+    width: 16rem;
+    background-color: #5A827E;
+    gap: 0.3rem;
+    border-radius: 0.5rem;
+    padding: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+#reset-btn{
+    height: 3.5rem;
+    font-size:1.8rem;
+    width: 70%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#score{
+    font-size: 2.4rem;
+}
+
+.message{
+  font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 760px) and (orientation: landscape) {
+.container{
+    margin-top: 1rem;
+    padding: 0;
+}
+    body{
+    overflow: hidden;
+    align-items: flex-start;
+}
+ #game{
+    height: 16rem;
+    width: 16rem;
+    background-color: #5A827E;
+    gap: 0.3rem;
+    border-radius: 0.5rem;
+    padding: 5px;
+    margin-top: 2rem;
+    margin-bottom: 0.01rem;
+}
+
+#reset-btn{
+    height: 3rem;
+    font-size:1.4rem;
+    width: 70%;
+    text-align: center;
+}
+
+#score{
+    font-size: 2.4rem;
+}
+
+.message{
+  font-size: 1.5rem;
+}
+
+.game-over{
+    margin-top: 3rem;
+}
+
+
+}
+
+
