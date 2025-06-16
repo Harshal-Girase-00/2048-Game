@@ -55,6 +55,9 @@ body{
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
 }
 
 #reset-btn{
@@ -195,6 +198,10 @@ body{
     text-align: center;
 }
 
+.tile{
+    font-size: 1rem;
+}
+
 #score{
     font-size: 2.4rem;
 }
@@ -203,26 +210,8 @@ body{
   font-size: 1.5rem;
 }
 
-.tile-128 {
-    font-size: 1rem;
-}
-
-.tile-256 {
-    font-size: 1rem;
-}
-
-.tile-512 {
-    font-size: 1rem;
-}
-
-.tile-1024 {
-    font-size: 1rem;
-}
-
-.tile-2048 {
-    font-size: 1rem;
-}
-
+.tile-128,.tile-256,.tile-512,.tile-1024 {
+    font-family: 0.5rem;
 }
 
 @media screen and (max-width: 760px) and (orientation: landscape) {
