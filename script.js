@@ -231,6 +231,7 @@ const gameOver = () => {
 
 const restartGame = () => {
    document.querySelector(".game-over").classList.add("hide");
+   document.querySelector(".allgame").classList.remove("hidden");
    resetGame();
 }
 
