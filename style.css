@@ -52,6 +52,9 @@ body{
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #reset-btn{

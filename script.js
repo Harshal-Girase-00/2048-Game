@@ -4,7 +4,14 @@ const size= 4;
 const tiles = [];
 const board = [];
 let score = 0;
+let container = document.querySelector(".container");
 document.querySelector(".allgame").classList.remove("hidden");
+
+container.addEventListener("touchmove",
+  function(e){
+    e.preventDefault();
+  },{passive: false});
+ 
 for  (let i = 0; i < 16; i++){
     const tile = document.createElement("div");
     tile.classList.add("tile");
